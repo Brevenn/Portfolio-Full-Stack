@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="./assets/css/glightbox.min.css" />
     <title>Charles Breven Glasgow</title>
   </head>
   <body>
@@ -17,92 +22,158 @@
       <div class="hero-text-box">
         <h1 class="hero-heading">Learning is Growing, Expanding the Mind</h1>
         <p class="hero-text">Wanna see my work? Keep on scrolling!</p>
+        <p>
+          <a href="#portfolio">
+            <button type="button" class="hero-button">View Portfolio</button>
+          </a>
+          <a href="#about">
+            <button type="button" class="hero-button">Learn About Me</button>
+          </a>
+        </p>
       </div>
     </header>
     <!-- End Hero Header Section -->
 
-    <!-- Begin About Me Section -->
-    <section id="about">
-        <div class="about-section">
-            <div>
-    
-                <div class="about-header">
-                    <h3>About:</h3>
-                </div>
-    
-                <div class="about-container">
-                    I have been working in consumer electronics for 5 years now. I am 
-                    an aspiring Software/Web Developer Certified by the Coding Boot 
-                    Camp at the University of Texas. I am on the hunt for a company 
-                    that can help me succeed in developing my ability to code, problem 
-                    solve and create. I thrive off of finding solutions and teaching. 
-                    My aspirations are in video game programming and developing new 
-                    games that everyone around the world play. Striving to always learn 
-                    new languages of code and tasks as well as do what is best for me 
-                    and my family!
-                </div>
-
-                <div class="gallery-item">
-                    <a href="https://github.com/Brevenn" class="glightbox">
-                        <img src="./assets/img/recent-selfie.png" alt="A recent photo of Me" class="about-img">
-                    </a>
-                </div>
-    
-    
-            </div>
+    <!-- Begin Portfolio Section -->
+    <section id="portfolio" class="portfolio-container">
+      <h1>Portfolio</h1>
+      <div class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn/Urban-Octo-Refactor.git"
+            class="glightbox"
+            data-glightbox="title:Urban Octo Refactor; description: HTML/CSS Refactored Module"
+          >
+            <img
+              style="vertical-align: text-top;"
+              src="./assets/img/codepic1.jpg"
+              alt="HTML Refactor"
+              class="gallery-img"
+            />Challenge HTML/CSS Refactor
+          </a>
         </div>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn/Portfolio-Full-Stack"
+            class="glightbox"
+            data-glightbox="title: Portfolio Source; description: a link to my portfolio source"
+          >
+            <p class="gallery-text">Challenge HTML/CSS Refactor</p>
+            <img
+              src="./assets/img/codepic2.jpg"
+              alt="CSS Portfolio"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn/fun-with-passwords"
+            class="glightbox"
+            data-glightbox="title: Fun With Passwords Refactor; description: JavaScript Refactored Module"
+          >
+            <p class="gallery-text">Challenge HTML/CSS Refactor</p>
+            <img
+              src="./assets/img/codepic3.jpg"
+              alt="JavaScript Refactor"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn/module.4.test-your-coding-might"
+            class="glightbox"
+            data-glightbox="title: Test Your Coding Might; description: Quiz Application usiing a Web API"
+          >
+            <p class="gallery-text">Challenge HTML/CSS Refactor</p>
+            <img
+              src="./assets/img/codepic4.jpg"
+              alt="Web API Coding Quiz"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn/UTmodule.5.work-day-scheduler"
+            class="glightbox"
+            data-glightbox="title: Work Day Scheduler; description: Work Day Scheduler using Server-Side APIs"
+          >
+            <p class="gallery-text">Challenge HTML/CSS Refactor</p>
+            <img
+              src="./assets/img/codepic5.jpg"
+              alt="Third-Party API Work Day Scheduler"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn/module.6.whats-the-weather"
+            class="glightbox"
+            data-glightbox="title: What's the Weather?; description: Forecast Application using the Third-Party API OpenWeatherMap"
+          >
+            <p class="gallery-text">Challenge HTML/CSS Refactor</p>
+            <img
+              src="./assets/img/codepic1.jpg"
+              alt="Server-Side API Weather Dashboard"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/teeoni/SuperTeamRepo"
+            class="glightbox"
+            data-glightbox="title: First Collaborative Group Project; description: A brewery locating Application that uses JS/APIs"
+          >
+            <p class="gallery-text">Challenge HTML/CSS Refactor</p>
+            <img
+              src="./assets/img/projectpic1.jpg"
+              alt="Project 1: Brewery and Bar Finding Application"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- Begin About Me Section -->
+    <section class="about-container">
+      <section class="about-text">
+        <h1>About:</h1>
+        <p>
+          I have been working in consumer electronics for 5 years now. I am an
+          aspiring Software/Web Developer Certified by the Coding Boot Camp at
+          the University of Texas. I am on the hunt for a company that can help
+          me succeed in developing my ability to code, problem solve and create.
+          I thrive off of finding solutions and teaching. My aspirations are in
+          video game programming and developing new games that everyone around
+          the world play. Striving to always learn new languages of code and
+          tasks as well as do what is best for me and my family!
+        </p>
+        <div class="gallery-item">
+          <a
+            href="https://github.com/Brevenn"
+            class="glightbox"
+            data-glightbox="title: Self Portrait; description: a recent picture of me"
+          >
+            <img
+              src="./assets/img/recent-selfie.png"
+              alt="A recent photo of Me"
+              class="about-img"
+            />
+          </a>
+        </div>
+      </section>
     </section>
     <!-- End About Me Section -->
 
-    <!-- Begin Portfolio Section -->
-    <section class="portfolio-container">
-        <h1>Portfolio</h1>
-        <div class="portfolio-gallery">
-            <div class="gallery-item">
-                <a href="https://github.com/Brevenn/Urban-Octo-Refactor.git" class="glightbox">
-                    <img src="./assets/img/codepic1.jpg" alt="HTML Refactor" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="https://github.com/Brevenn/Portfolio-Full-Stack" class="glightbox">
-                    <img src="./assets/img/codepic2.jpg" alt="CSS Portfolio" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="https://github.com/Brevenn/fun-with-passwords" class="glightbox">
-                    <img src="./assets/img/codepic3.jpg" alt="JavaScript Refactor" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="https://github.com/Brevenn/module.4.test-your-coding-might" class="glightbox">
-                    <img src="./assets/img/codepic4.jpg" alt="Web API Coding Quiz" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="https://github.com/Brevenn/UTmodule.5.work-day-scheduler" class="glightbox">
-                    <img src="./assets/img/codepic5.jpg" alt="Third-Party API Work Day Scheduler" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="https://github.com/Brevenn/module.6.whats-the-weather" class="glightbox">
-                    <img src="./assets/img/codepic1.jpg" alt="Server-Side API Weather Dashboard" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="https://github.com/teeoni/SuperTeamRepo" class="glightbox">
-                    <img src="./assets/img/projectpic1.jpg" alt="Project 1: Brewery and Bar Finding Application" class="gallery-img">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="./assets/img/codepic1.jpg" class="glightbox">
-                    <img src="./assets/img/codepic1.jpg" alt="Node.js README Generator" class="gallery-img">
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- End Portfolio Section -->
     <script src="./assets/js/glightbox.min.js"></script>
     <script type="text/javascript">
-        const lightbox = Glightbox({ loop: true });</script>
+      const lightbox = Glightbox({ loop: true });
+    </script>
   </body>
 </html>

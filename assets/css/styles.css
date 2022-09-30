@@ -8,6 +8,12 @@ html {
     height: 100%;
 }
 
+@media (prefers-reduced-motion){
+    html {
+        scroll-behavior: initial;
+    }
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -87,6 +93,25 @@ img, video {
     color: darkblue;
 }
 
+.hero-button {
+    display: inline-block;
+    padding: .75rem 2rem;
+    background: none;
+    color: blueviolet;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.hero-button:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-button:active {
+    transform: scale(0.95);
+}
 /* Portfolio Gallery Styles */
 .portfolio-container {
     margin: 1rem auto 0 auto ;
@@ -99,7 +124,8 @@ img, video {
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: .5rem;
     grid-auto-rows: 300px;
 }
@@ -113,11 +139,29 @@ img, video {
 .gallery-img {
     height: 100%;
     object-fit: cover;
+    transition: 0.5s ease-in-out;
+    padding: 10px;
+    color: transparent;
+    justify-content: center;
+}
+
+.gallery-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .gallery-img:hover {
-    transform: scale(1.7);
+    color: aquamarine;
 }
+
 /* Media Queries */
 
 @media (min-width: 600px) {
@@ -132,11 +176,23 @@ img, video {
     .hero-text-box {
         padding: 2rem;
     }
+
+    .portfolio-container h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 @media (min-width: 920px) {
     .hero-heading {
         font-size: 6rem;
         line-height: 6rem;
+    }
+    .portfolio-container {
+        max-width: 1400px;
+    }
+    .portfolio-container h1{
+        font-size: 4rem;
+        line-height: 4rem;
     }
 }
