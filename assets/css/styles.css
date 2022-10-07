@@ -2,6 +2,13 @@ body {
   font-family: "Archivo", sans-serif;
 }
 
+.about-container {
+  background-color: #152c2d;
+  border-radius: 7px;
+  padding: 15px;
+  color: aliceblue;
+}
+
 /* About Me Styles */
 
 .about-text p {
@@ -80,13 +87,17 @@ body {
   color: #174b1b;
 }
 
-.fa-solid .fa-brands{
-    background-color: #1a3442;
+.fa-solid .fa-brands {
+  background-color: #1a3442;
 }
 
 .section {
   padding: 50px 0;
   position: relative;
+}
+
+.theme-color {
+  color: #80d6dc;
 }
 
 .px-btn.theme {
@@ -204,10 +215,11 @@ body {
 
 .card-title {
   font-weight: bold;
+  color: #1a3442;
 }
 
 .break {
-  border-bottom: 1px solid #5bebf5;
+  border-bottom: 1px solid #23565a;
 }
 
 .card.invert {
@@ -219,7 +231,11 @@ body {
   border-radius: 50px;
 }
 
-.item-container {
+/* #contact-info p {
+    color: #80d6dc;
+} */
+
+/* .item-container {
     position: relative;
 }
 
@@ -228,7 +244,7 @@ body {
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
-}
+} */
 
 #contact-button,
 #resume-button {
