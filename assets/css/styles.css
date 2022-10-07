@@ -1,0 +1,313 @@
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+/* About Me Styles */
+
+.about-text p {
+  font-size: 16px;
+}
+
+.about-text p mark {
+  font-weight: 550;
+  color: #000080;
+}
+
+.about-text .btn-bar {
+  padding-top: 10px;
+}
+
+.about-list {
+  padding-top: 10px;
+}
+.about-list .media {
+  padding: 5px 0;
+}
+.about-list label {
+  color: #4896b5;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #3f89b1;
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  margin: auto;
+  opacity: 0.5;
+}
+.about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.about-img {
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.06);
+  padding: 3px;
+  border-radius: 430px;
+}
+
+.about-img img {
+  border-radius: 430px;
+}
+
+.counter-section {
+  padding: 40px 20px;
+}
+.counter-section .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.counter-section .count {
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+.counter-section p {
+  font-weight: 500;
+  margin: 0;
+  color: #174b1b;
+}
+
+.fa-solid .fa-brands{
+    background-color: #1a3442;
+}
+
+.section {
+  padding: 50px 0;
+  position: relative;
+}
+
+.px-btn.theme {
+  background: #174b1b;
+  color: #ffffff;
+  border: 2px solid #174b1b;
+}
+.px-btn {
+  padding: 0 20px;
+  line-height: 42px;
+  border: 2px solid transparent;
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.px-btn.theme-t {
+  background: transparent;
+  border: 2px solid #174b1b;
+  color: #174b1b;
+}
+
+.hire-me {
+  cursor: pointer;
+}
+
+#span {
+  margin-right: 4px;
+  letter-spacing: 0.2rem;
+  font-family: "Source Code Pro", serif;
+}
+
+.fa-comment {
+  transform: translate(0px, -10px);
+}
+
+.skills-container {
+  padding: 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.skill-grid {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.skill-grid li {
+  padding: 10px;
+  border-radius: 15px;
+  width: 80px;
+  -webkit-box-shadow: 0px 4px 8px rgba(63, 184, 195, 0.5);
+  box-shadow: 0px 4px 8px rgba(63, 184, 195, 0.5);
+}
+.skill-grid li img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.skill-grid li p {
+  margin-bottom: 0px;
+}
+
+.skills-container li {
+  list-style: none;
+  display: list-item;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-grid li:hover {
+  box-shadow: 0px 0px 30px 5px #227d7e;
+}
+
+.header {
+  font-weight: bold;
+  translate: 0px 20px;
+}
+
+.fthomework {
+  letter-spacing: 0.25rem;
+  font-weight: 300;
+  font-size: 90%;
+}
+
+.card {
+  flex-direction: row;
+  border: none;
+  margin: 50px 0px 150px;
+  background-color: transparent;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.break {
+  border-bottom: 1px solid #5bebf5;
+}
+
+.card.invert {
+  flex-direction: row-reverse;
+}
+
+.card img {
+  padding: 0px;
+  border-radius: 50px;
+}
+
+.item-container {
+    position: relative;
+}
+
+.icon-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}
+
+#contact-button,
+#resume-button {
+  border-radius: 30px;
+  padding: 15px;
+  background-color: transparent;
+  border: solid;
+}
+
+.transition {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#contact-section {
+  margin-bottom: 100px;
+}
+
+/* Keyframes and Media  */
+
+@media (max-width: 991px) {
+  .about-text {
+    margin-top: 40px;
+  }
+}
+.about-text h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+@media (max-width: 767px) {
+  .about-text h3 {
+    font-size: 35px;
+  }
+}
+.about-text h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .about-text h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-img {
+    margin-top: 30px;
+    border-radius: 345px;
+  }
+  .about-img img {
+    border-radius: 342px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card,
+  .card.invert {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-body {
+    padding-top: 0px;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .col-6 {
+    max-width: 90%;
+  }
+  .col-5 {
+    max-width: 90%;
+  }
+  .ftproj {
+    visibility: hidden;
+  }
+  .resume-button {
+    display: flex;
+    justify-content: center;
+  }
+}
